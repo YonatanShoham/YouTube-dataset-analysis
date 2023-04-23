@@ -1,29 +1,12 @@
 # YouTube-dataset-analysis
-YouTube dataset analysis, the data was analyzed from and an excel xls file, and the analysis was done with the aid of phyton matplotlib library.
-Eleven matplotlib graphs were analyzed to reach some productive conclusions to aid YouTube channel owners to expand or maintain their user base.
+The given dataset contains 27 different columns, of which the first column is the index column. The index number is unique to every row, thus it can be defined as the primary key for every row that has a unique number identifying it. The other 26 remaining columns contain YouTube-related data, with the channel ID column being the unique ID of every channel.
 
-The main purpose of this data analyzation is to aid YouTube channel owners to expand or maintain their user base by providing them with useful information regarding YouTube video usage.
-A secondary purpose can be to aid YouTube common users to find the best quality or most popular channels or videos. 
+The following columns are divided by categories: positive correlation, negative correlation, unknown correlation, and unrelated correlation. In positive correlation, YouTube channel owners will want to maximize the amount to gain success. In negative correlation, YouTube channel owners will want to minimize the amount to gain success. In unknown correlation, the effect on the channel success of changing the amount or type of the factor is yet unknown. In unrelated correlation, the column data is unrelated to the channel success.
 
-The given dataset contain 27 different columns, of which the first column is the index column the index number is unique to every row thus it can be defined as the primary key every row has a unique number identifying it. 
-The other 26 remaining columns contain YouTube related data, the channel id column is the unique id of every channel.
-The following columns are divided by categories: positive correlation in which the YouTube channel owners will want to maximize the amount to gain success, negative correlation in which the YouTube channel owners will want to minimize the amount to gain success, unknown correlation in which the effect on the channel success of changing the amount or type of the factor is yet unknown and unrelated correlation in which the column data is unrelated to the channel success.
+Positive correlation factors include subscriber count, channel view count, channel comment count, video view count, likes/dislikes, and video like count. Negative correlation factors include dislikes/subscriber, dislikes/views, and video dislike count. Unknown correlation factors include video category ID, video count, views/subscribers, channel elapsed time, video ID, total views/channel elapsed time, comments/views, comments/subscriber, likes/subscriber, likes/views, total videos/video count, elapsed time, total views/total subs, views/elapsed time, video published, and video comment count. Unrelated correlation factors include Index and Channel ID.
 
-Positive correlation : subscriberCount, channelViewCount, channelCommentCount, videoViewCount, likes/dislikes, videoLikeCount.
+To achieve the objective, a comparison will be made between factors with known correlation outcomes to factors with unknown correlation outcomes. This method will help draw conclusions about the factors with unknown correlations to success. This comparison will give results that will hopefully aid the YouTube channel owner in improving their channel's success.
 
-Negative correlation: dislikes/subscriber, dislikes/views, videoDislikeCount.
-Unknown correlation: videoCategoryId, videoCount, views/subscribers, channelelapsedtime, videoId, totalviews/channelelapsedtime comments/views, comments/subscriber, likes/subscriber, likes/views, totvideos/videocount, elapsedtime, totviews/totsubs, views/elapsedtime, videoPublished, VideoCommentCount.
-Unrelated correlation: Index, channelId.
+The objective is to aid the YouTube channel owner in improving or maintaining their user base, and to achieve this, various factors will be considered. A logical assumption is that a channel owner will want to maximize their number of subscriptions, views, and likes, and minimize their number of dislikes. A large number of likes and views for a specific video can be seen as short-term success, while a large number of subscriptions or a large number of likes and views per channel can be seen as long-term success.
 
-To achieve the main objective a comparison will be made between factors with known correlation outcome to factors with unknow correlation outcome. This method will help draw conclusions about the factors with the unknown correlation to success.
-This comparison will give results that will hopefully aid the YouTube channel owner improve his channel success.
-
-The main objective is to aid the YouTube channel owner to improve or maintain it’s users base, to achieve this various factors will be considered.
-The logical assumption is that a channel owner will want to maximize his number of subscriptions, views, likes and will want o minimize his number of dislikes. 
-A big amount of likes and views for a specific video can be seen as a short term success and a big amount of subscriptions or a big amount of likes and views per channel can be seen as a long term success.
-
-The raw number of for example likes per videos will give us partial information because a video can get a big amount of likes compared to another video, but the amount of subscribers and viewers can vary greatly between them.
-For example, a video that got 100 likes but have been watched a million times compared to a video that got 100 likes but have been watched only a thousand times, it can be assumed that both videos got very different reactions from the audience.
-To amend this problem more substantial usage will be made with data that is divided by values which represents the channel popularity for example number of subscriptions, views.
-The channel that got the most subscriptions or the video that got the most likes\views divided by a factor that represents the video\channel popularity for example number of subscriptions will give a scale of the video\channel success.
-
+To amend this problem of partial information, more substantial usage will be made with data that is divided by values which represent the channel's popularity, such as the number of subscriptions or views. The channel that has the most subscriptions or the video that has the most likes/views divided by a factor that represents the video/channel popularity, such as the number of subscriptions, will give a scale of the video/channel success.
